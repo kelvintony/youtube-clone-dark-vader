@@ -1,0 +1,70 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	/* making the header sticky */
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: white;
+	width: 100%;
+	margin-right: 0px;
+}
+
+.header__logo {
+	height: 25px;
+	object-fit: contain;
+	margin-left: 10px;
+}
+
+.header__input {
+	display: flex;
+	align-items: center;
+	width: 40%;
+	border: 1px solid black;
+}
+.header__inputButton {
+	/* the !important below overrides the default width size because it's a materialUI */
+	width: 50px !important;
+	background-color: #fafafa;
+	border-left: 1px solid lightgray;
+	color: gray;
+}
+
+.header__icons {
+	display: flex;
+	align-items: center;
+}
+
+.header__icon {
+	margin-right: 5px;
+}
+
+.header__input > input {
+	/* the flex 1 enables the input to take up the full space width of its container */
+	/* the value 1 simply means 100% width*/
+	flex: 1;
+	border: none;
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.header {
+		top: 0;
+		position: static;
+		width: 100%;
+		padding-right: 0;
+	}
+	.header__logo {
+		width: 80px;
+	}
+
+	.header__input {
+		display: none;
+	}
+
+	.header__inputButton {
+		display: none;
+	}
+}

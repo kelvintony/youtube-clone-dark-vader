@@ -1,0 +1,17 @@
+.recommendedVideos {
+	/* the flex 0.8 enables the sidebar to take up the 80% width space of its container */
+	flex: 0.8;
+	background-color: #f9f9f9;
+	padding: 40px 20px;
+	padding-bottom: 0;
+}
+
+.recommendedVideos > h2 {
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.recommendedVideos__videos {
+	display: flex;
+	flex-wrap: wrap;
+}

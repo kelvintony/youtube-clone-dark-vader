@@ -1,0 +1,37 @@
+.videoCard {
+	margin-bottom: 40px;
+	width: 270px;
+}
+
+.videoCard__thumbnail {
+	height: 140px;
+	width: 250px;
+}
+
+.videoCard__info {
+	display: flex;
+	margin-top: 10px;
+	padding-right: 20px;
+}
+
+.videoCard__text {
+	margin-left: 10px;
+}
+
+.videoCard__text > h4 {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.videoCard__text > p {
+	font-size: 14px;
+	/* uncomment this below is the text color is too light */
+	color: gray;
+}
+
+.videoCard__avatar {
+	/* the avatar here is a material ui so if you want to change the height  */
+	/* you must override it by introducing the !important */
+	height: 30px !important;
+	width: 30px !important;
+}

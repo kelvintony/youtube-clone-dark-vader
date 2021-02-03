@@ -1,0 +1,14 @@
+.sidebar {
+	/* the flex 0.2 enables the sidebar to take up the 20% width space of its container */
+	/* the value 0.2 simply means 20% width */
+	flex: 0.2;
+	margin-left: 10px;
+}
+
+.sidebar > hr {
+	height: 1px;
+	border: 0;
+	background-color: lightgray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

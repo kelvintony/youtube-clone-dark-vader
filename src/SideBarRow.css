@@ -1,0 +1,62 @@
+.sideBarRow {
+	display: flex;
+	align-items: center;
+}
+
+.sideBar__icon {
+	color: #606060;
+	font-size: large !important;
+}
+
+.sideBar__title {
+	flex: 1;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: "Open Sans";
+}
+
+.sideBarRow:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+.sideBarRow:hover > .sideBar__icon {
+	color: red;
+}
+
+.sideBarRow:hover > .sideBar__title {
+	font-size: 21px;
+}
+
+.sideBarRow.selected {
+	background-color: lightgray;
+}
+
+.sideBarRow.selected > .sideBar__icon {
+	color: red;
+}
+
+.sideBarRow.selected > .sideBar__title {
+	font-size: 21px;
+}
+
+@media only screen and (max-width: 600px) {
+	.sideBar__icon {
+		font-size: small !important;
+	}
+
+	.sideBar__title {
+		font-size: 15px;
+		font-weight: 300;
+		font-family: "Open Sans";
+	}
+
+	.sideBarRow.selected > .sideBar__title {
+		font-size: 15px;
+	}
+
+	.sideBarRow:hover > .sideBar__title {
+		font-size: 16px;
+	}
+}
